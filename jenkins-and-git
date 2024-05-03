@@ -13,12 +13,10 @@ pipeline {
             }
             post {
                 always {
-                    emailext (
-                        to: "radhakrishnagampa@gmail.com",
+                        mail to: "radhakrishnagampa@gmail.com",
                         subject: "Test Status",
                         body: "Test log attached!",
                         attachLog: true
-                    )
                 }
             }
         }
@@ -33,12 +31,10 @@ pipeline {
             }
             post {
                 always {
-                    emailext (
-                        to: "radhakrishnagampa@gmail.com",
+                        mail to: "radhakrishnagampa@gmail.com",
                         subject: "Security Scan Status",
                         body: "Security scan log attached!",
                         attachLog: true
-                    )
                 }
             }
         }
