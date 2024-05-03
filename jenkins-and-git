@@ -16,7 +16,7 @@ pipeline {
                     emailext (
                         to: "radhakrishnagampa@gmail.com",
                         subject: "Test Status",
-                        body: "Test log attached!",
+                        body: "Test successful and log attached!",
                         attachLog: true
                     )
                 }
@@ -36,7 +36,7 @@ pipeline {
                     emailext (
                         to: "radhakrishnagampa@gmail.com",
                         subject: "Security Scan Status",
-                        body: "Security scan log attached!",
+                        body: "Security scan successful and log attached!",
                         attachLog: true
                     )
                 }
